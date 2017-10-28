@@ -1,2 +1,3 @@
-Using HTML, CSS, and Javascript, I have created a simple calculator that does basic arithmetic.
-I also programmed it so when you press on a key on the calculator, a beep sound will play.
+Utilizing HTML, CSS, and Javascript, I have created a simple calculator that does basic arithmetic.
+I have also implemented a special sound effect for each keypad that will play, when pressed on by the user.
+Date of Creation : 08/12/2016
