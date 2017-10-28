@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- Ricky Pong -->
+<html>
+	<head>
+		<title>HTML Calculator</title>
+	</head>
+	<script>
+			var beep = new Audio();
+			beep.src = "beep.mp3";
+			function PlaySound() 
+				{
+					beep.play();
+				}
+	</script>
+	<style>
+		body
+		{
+			background-color : gray;
+			text-align : center;
+			padding-top : 2%;
+		}
+		input
+		{
+			font-size: 42pt;
+			background-color : red;
+			color : white;
+			width : 7.5%;
+			border-radius : 100px;
+			margin: 5px 1px;
+		}
+		#answer
+		{
+			width : 30%;
+			background-color : black;
+			text-align : right;
+			border-radius : 10px;
+			padding : 0px 0px 5px 0px;
+		}
+		form
+		{
+			margin-top : 2.5%;
+		}
+		header
+		{
+			color : blue;
+			font-size : 48pt;
+			font-family : calibri; 
+			font-weight: bold;
+		}
+	</style>
+	<body bgcolor= "#000000" text= "gold">
+	<header> Ricky's Calculator </header>
+		<form name="calculator" >
+			<audio id = "beep"> </audio>
+			<input id = "answer" type="textfield" name="ans" value="">
+			<br />
+			<input type="button" value="1" onClick="PlaySound();document.calculator.ans.value+='1'">
+			<input type="button" value="2" onClick="PlaySound();document.calculator.ans.value+='2'">
+			<input type="button" value="3" onClick="PlaySound();document.calculator.ans.value+='3'">
+			<input type="button" value="+" onClick="PlaySound();document.calculator.ans.value+='+'">
+			<br />
+			<input type="button" value="4" onClick="PlaySound();document.calculator.ans.value+='4'">
+			<input type="button" value="5" onClick="PlaySound();document.calculator.ans.value+='5'">
+			<input type="button" value="6" onClick="PlaySound();document.calculator.ans.value+='6'">
+			<input type="button" value="-" onClick="PlaySound();document.calculator.ans.value+='-'">
+			<br />
+			<input type="button" value="7" onClick="PlaySound();document.calculator.ans.value+='7'">
+			<input type="button" value="8" onClick="PlaySound();document.calculator.ans.value+='8'">
+			<input type="button" value="9" onClick="PlaySound();document.calculator.ans.value+='9'">
+			<input type="button" value="*" onClick="PlaySound();document.calculator.ans.value+='*'">
+			<br />
+			<input type="reset" value="C" onClick = "PlaySound();">
+			<input type="button" value="0" onClick="PlaySound();document.calculator.ans.value+='0'">
+			<input type="button" value="=" onClick="PlaySound();document.calculator.ans.value=eval(document.calculator.ans.value)">
+			<input type="button" value="/" onClick="PlaySound();document.calculator.ans.value+='/'">	
+		</form>
+	</body>
+</html>
